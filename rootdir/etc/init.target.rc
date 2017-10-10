@@ -71,6 +71,13 @@ on property:ro.boot.hwname=*
 on property:ro.boot.product.hardware.sku=vayu
     enable vendor.nfc_hal_service
 
+    mkdir /dev/cpuset/camera-daemon
+    write /dev/cpuset/camera-daemon/cpus 0-7
+    write /dev/cpuset/camera-daemon/mems 0
+    chown system system /dev/cpuset/camera-daemon
+    chown system system /dev/cpuset/camera-daemon/tasks
+    chmod 0664 /dev/cpuset/camera-daemon/tasks
+
 on boot
     # FPS Info permissions
     chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
