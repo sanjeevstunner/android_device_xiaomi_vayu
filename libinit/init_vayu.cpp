@@ -105,6 +105,44 @@ void set_device_props(const std::string brand, const std::string device, const s
     }
 }
 
+/* From Magisk@jni/magiskhide/hide_utils.c */
+static const char *cts_prop_key[] = {
+    "ro.boot.verifiedbootstate",
+    "ro.boot.flash.locked",
+    "ro.boot.selinux",
+    "ro.boot.veritymode",
+    "ro.boot.warranty_bit",
+    "ro.warranty_bit",
+    "ro.debuggable",
+    "ro.secure",
+    "ro.build.type",
+    "ro.build.tags",
+    "ro.build.selinux",
+    NULL};
+
+static const char *cts_prop_value[] = {
+    "green",
+    "1",
+    "enforcing",
+    "enforcing",
+    "0",
+    "0",
+    "0",
+    "1",
+    "user",
+    "release-keys",
+    "1",
+    NULL};
+
+static void workaround_cts_properties()
+{
+    // Hide all sensitive props
+    for (int i = 0; cts_prop_key[i]; ++i)
+    {
+        property_override(cts_prop_key[i], cts_prop_value[i]);
+    }
+}
+
 void vendor_load_properties() {
     string region = android::base::GetProperty("ro.boot.hwc", "");
 
@@ -127,6 +165,9 @@ void vendor_load_properties() {
 
     // Set product name to show when connect through usb
     property_override("vendor.usb.product_string", GetProperty("ro.product.marketname", "").c_str());
+
+    /* Workaround CTS */
+    workaround_cts_properties();
 
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
