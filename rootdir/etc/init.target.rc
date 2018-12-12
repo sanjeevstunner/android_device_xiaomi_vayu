@@ -27,6 +27,10 @@
 #
 #
 
+on early-init
+    # Disable EAS
+    write /sys/kernel/debug/sched_features NO_ENERGY_AWARE
+
 on init
     wait /dev/block/platform/soc/1d84000.ufshc
     symlink /dev/block/platform/soc/1d84000.ufshc /dev/block/bootdevice
