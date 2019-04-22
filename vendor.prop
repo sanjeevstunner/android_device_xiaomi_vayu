@@ -149,6 +149,9 @@ vendor.gralloc.disable_ubwc=0
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# Gatekeeper
+vendor.gatekeeper.disable_spu = true
+
 # HVDCP
 persist.vendor.cp.taper_term_mv=7000
 persist.vendor.cp.fcc_main_ua=400000
