@@ -151,6 +151,13 @@ on property:sys.boot_completed=1
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/restricted/cpus 0-3
 
+    # Setup runtime blkio
+    # value for group_idle is us
+    write /dev/blkio/blkio.weight 1000
+    write /dev/blkio/background/blkio.weight 10
+    write /dev/blkio/blkio.group_idle 2000
+    write /dev/blkio/background/blkio.group_idle 0
+
     # Setting b.L scheduler parameters
     write /proc/sys/kernel/sched_upmigrate "95 95"
     write /proc/sys/kernel/sched_downmigrate "85 85"
