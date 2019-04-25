@@ -105,3 +105,7 @@ on property:vendor.setup.power=1
     write /sys/module/lpm_levels/parameters/sleep_disabled 0
 
     chown system system /sys/class/devfreq/soc:qcom,l3-cdsp/userspace/set_freq
+
+on boot
+    # Enable suspend to idle mode to reduce latency during suspend/resume
+    write /sys/power/mem_sleep "s2idle"
