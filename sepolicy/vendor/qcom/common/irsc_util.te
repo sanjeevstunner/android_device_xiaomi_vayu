@@ -1,0 +1,3 @@
+allow irsc_util self:socket create;
+
+dontaudit irsc_util kernel:system module_request;

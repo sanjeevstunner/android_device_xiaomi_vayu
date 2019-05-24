@@ -1,0 +1,3 @@
+add_hwservice(rild, hal_dataconnection_hwservice)
+allow rild time_daemon:unix_stream_socket connectto;
+set_prop(rild, vendor_xlat_prop)
