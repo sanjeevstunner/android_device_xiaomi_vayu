@@ -113,6 +113,7 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8150
 
 # Media
 TARGET_USES_ION := true
+TARGET_DISABLED_UBWC := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144
