@@ -158,6 +158,9 @@ debug.stagefright.omx_default_rank=0
 # PASR
 vendor.power.pasr.enabled=false
 
+# Perf
+ro.vendor.extension_library=libqti-perfd-client.so
+
 # Radio/RIL
 persist.radio.multisim.config=dsds
 persist.vendor.data.iwlan.enable=true
