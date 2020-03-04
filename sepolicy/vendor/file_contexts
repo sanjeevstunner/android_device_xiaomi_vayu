@@ -1,2 +1,5 @@
 # HALs
 /vendor/bin/hw/android\.hardware\.lights-service\.vayu               u:object_r:hal_light_default_exec:s0
+
+# WiFi
+/vendor/bin/nv_mac                                                   u:object_r:vendor_wcnss_service_exec:s0
