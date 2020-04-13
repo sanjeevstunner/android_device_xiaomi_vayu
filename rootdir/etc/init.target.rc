@@ -46,6 +46,12 @@ on late-fs
     exec_start wait_for_keymaster
     mount_all /vendor/etc/fstab.qcom --late
 
+service nv_mac /vendor/bin/nv_mac
+    class late_start
+    user system
+    group system inet net_admin wifi net_raw
+    oneshot
+
 on post-fs-data
     mkdir /data/vendor/nnhal 0700 system system
     mkdir /data/vendor/nfc 0770 nfc nfc
