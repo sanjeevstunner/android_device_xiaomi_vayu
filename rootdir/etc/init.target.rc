@@ -134,6 +134,12 @@ service vendor.thermal-engine /vendor/bin/thermal-engine
     group root
     writepid /dev/cpuset/system-background/tasks
 
+service vendor.hvdcp_opti /vendor/bin/hvdcp_opti
+    class main
+    user root
+    group system wakelock
+    writepid /dev/cpuset/system-background/tasks
+
 service vendor.nv_mac /vendor/bin/nv_mac
     class late_start
     user system
