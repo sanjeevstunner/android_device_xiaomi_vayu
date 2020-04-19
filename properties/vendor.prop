@@ -77,6 +77,7 @@ dalvik.vm.dex2oat64.enabled=true
 
 # Display
 debug.sf.layer_caching_active_layer_timeout_ms=1000
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
