@@ -36,7 +36,7 @@ case "$target" in
     echo 85 85 > /proc/sys/kernel/sched_downmigrate
     echo 100 > /proc/sys/kernel/sched_group_upmigrate
     echo 10 > /proc/sys/kernel/sched_group_downmigrate
-    echo 1 > /proc/sys/kernel/sched_walt_rotate_big_tasks
+    echo 0 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
     # cpuset parameters
     echo 0-2     > /dev/cpuset/background/cpus
