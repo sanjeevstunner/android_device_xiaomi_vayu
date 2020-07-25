@@ -53,6 +53,12 @@ on init
     chown cameraserver cameraserver /dev/cpuset/camera-daemon/tasks
     chmod 0660 /dev/cpuset/camera-daemon/tasks
 
+on property:ro.boot.hwname=*
+    setprop ro.boot.product.hardware.sku ${ro.boot.hwname}
+
+on property:ro.boot.product.hardware.sku=vayu
+    enable vendor.nfc_hal_service
+
 on fs
     mount_all /vendor/etc/fstab.qcom --early
 
@@ -165,6 +171,14 @@ service vendor.nv_mac /vendor/bin/nv_mac
     user system
     group system inet net_admin wifi net_raw
     oneshot
+
+service vendor.nfc_hal_service /vendor/bin/hw/android.hardware.nfc@1.2-service
+    override
+    class hal
+    user nfc
+    group nfc
+    writepid /dev/cpuset/system-background/tasks
+    disabled
 
 service vendor.remosaic_daemon /system/vendor/bin/remosaic_daemon
     class late_start
