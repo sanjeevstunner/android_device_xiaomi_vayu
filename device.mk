@@ -387,6 +387,10 @@ PRODUCT_PACKAGES += \
    TetheringConfigOverlayVayu \
    WifiOverlayVayu
 
+# Perf
+PRODUCT_PACKAGES += \
+    libqti-perfd-client
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
