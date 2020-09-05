@@ -89,4 +89,7 @@ void vendor_load_properties()
     } else {
         set_device_props("POCO", "vayu", "M2102J20SG", "vayu_global");
     }
+
+    // Set hardware revision
+    property_override("ro.boot.hardware.revision", GetProperty("ro.boot.hwversion", "").c_str());
 }
