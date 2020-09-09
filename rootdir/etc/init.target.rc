@@ -112,6 +112,9 @@ on property:sys.boot_completed=1
     write /dev/cpuset/background/cpus 0-7
     write /dev/cpuset/system-background/cpus 0-7
 
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.qcom
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
