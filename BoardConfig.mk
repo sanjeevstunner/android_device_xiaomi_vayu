@@ -65,6 +65,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
 
+# Display density
+TARGET_SCREEN_DENSITY := 410 ## smallest width 421dp
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(DEVICE_PATH)/configs/hidl/framework_compatibility_matrix.xml \
