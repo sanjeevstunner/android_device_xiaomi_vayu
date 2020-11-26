@@ -16,6 +16,7 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Feature Flags
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_USES_AOSP_RECOVERY := true
 
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
