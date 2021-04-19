@@ -106,6 +106,9 @@ on property:vendor.setup.power=1
 
     chown system system /sys/class/devfreq/soc:qcom,l3-cdsp/userspace/set_freq
 
+    # Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
+
 on boot
     # Enable suspend to idle mode to reduce latency during suspend/resume
     write /sys/power/mem_sleep "s2idle"
