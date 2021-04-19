@@ -49,10 +49,6 @@ persist.vendor.ims.disableDebugLogs=1
 persist.vendor.ims.disableIMSLogs=1
 persist.vendor.ims.disableQXDMLogs=1
 
-# IOP
-vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=0
-
 # LMK
 ro.config.low_ram=false
 
