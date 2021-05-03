@@ -144,10 +144,9 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
+    android.hardware.memtrack-service.example \
     vendor.qti.hardware.display.allocator-service \
     vendor.qti.hardware.display.mapper@2.0.vendor \
-    android.hardware.memtrack@1.0-impl \
-    android.hardware.memtrack@1.0-service \
     libdisplayconfig.qti.vendor \
     libdisplayconfig.system.qti \
     libqdMetaData.system \
