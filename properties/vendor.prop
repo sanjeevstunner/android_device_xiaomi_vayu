@@ -185,6 +185,9 @@ persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sar_sar_sensor=true
 ro.telephony.iwlan_operation_mode=legacy
 
+# Refresh Rate
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+
 # SoC
 ro.soc.manufacturer=Qualcomm
 ro.soc.model=SM8150
