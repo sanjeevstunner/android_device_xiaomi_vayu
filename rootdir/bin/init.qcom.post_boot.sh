@@ -38,6 +38,13 @@ case "$target" in
     echo 10 > /proc/sys/kernel/sched_group_downmigrate
     echo 0 > /proc/sys/kernel/sched_walt_rotate_big_tasks
 
+    # Setup default schedtune values for foreground/top-app
+    echo 0 > /dev/stune/schedtune.boost
+    echo 0 > /dev/stune/schedtune.prefer_idle
+    echo 1 > /dev/stune/foreground/schedtune.prefer_idle
+    echo 1 > /dev/stune/top-app/schedtune.prefer_idle
+    echo 1 > /dev/stune/top-app/schedtune.boost
+
     # cpuset parameters
     echo 0-7     > /dev/cpuset/top-app/cpus
     echo 0-3,5-6 > /dev/cpuset/foreground/cpus
