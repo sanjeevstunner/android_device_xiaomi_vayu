@@ -1,1 +1,5 @@
 allow system_app vendor_sysfs_graphics:file { getattr open read };
+
+# Battery health
+allow system_app sysfs_battery_supply:dir search;
+allow system_app sysfs_battery_supply:file { read open getattr };
