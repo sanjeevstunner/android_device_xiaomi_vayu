@@ -7,3 +7,6 @@
 BOARD_VENDOR := xiaomi
 
 DEVICE_PATH := device/xiaomi/vayu
+
+# Inherit from proprietary files
+include vendor/xiaomi/vayu/BoardConfigVendor.mk
