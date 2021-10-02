@@ -117,6 +117,9 @@ BOARD_USES_METADATA_PARTITION := true
 # Platform
 TARGET_BOARD_PLATFORM := msmnile
 
+# Properties
+TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
+
 # QCOM
 BOARD_USES_QCOM_HARDWARE := true
 
