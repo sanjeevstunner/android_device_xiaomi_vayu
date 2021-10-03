@@ -327,6 +327,9 @@ vendor/lib64/libMegviiFacepp-0.5.2.so
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Charger
+vendor/bin/hvdcp_opti
+
 # CNE
 -vendor/app/CneApp/CneApp.apk
 -vendor/app/IWlanService/IWlanService.apk
