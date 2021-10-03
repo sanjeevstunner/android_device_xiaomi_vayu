@@ -55,6 +55,11 @@ TARGET_USES_HWC2 := true
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# HIDL
+DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/configs/hidl/manifest.xml
+DEVICE_MATRIX_FILE := $(DEVICE_PATH)/configs/hidl/compatibility_matrix.xml
+ODM_MANIFEST_FILES += $(DEVICE_PATH)/configs/hidl/manifest-qva.xml
+
 # Kernel
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
