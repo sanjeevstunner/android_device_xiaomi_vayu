@@ -327,6 +327,12 @@ vendor/lib64/libMegviiFacepp-0.5.2.so
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
 
+# Certificate Authority
+-vendor/app/CACertService/CACertService.apk
+vendor/lib64/libcacertclient.so
+vendor/lib64/libjnihelper.so
+vendor/lib64/vendor.qti.hardware.cacert@1.0.so
+
 # Charger
 vendor/bin/hvdcp_opti
 
