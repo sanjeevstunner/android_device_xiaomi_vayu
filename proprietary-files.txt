@@ -906,3 +906,6 @@ vendor/lib64/libtime_genoff.so
 
 # WLAN
 vendor/bin/cnss-daemon
+
+# Xiaomi MAC
+vendor/bin/nv_mac
