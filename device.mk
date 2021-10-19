@@ -258,6 +258,7 @@ PRODUCT_COPY_FILES += \
 
 # Recovery
 PRODUCT_PACKAGES += \
+    fastbootd \
     init.recovery.qcom.rc
 
 # RIL
