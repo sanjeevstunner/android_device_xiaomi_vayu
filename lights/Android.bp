@@ -1,0 +1,16 @@
+cc_binary {
+    name: "android.hardware.lights-service.vayu",
+    relative_install_path: "hw",
+    init_rc: ["lights-vayu.rc"],
+    vintf_fragments: ["lights-vayu.xml"],
+    vendor: true,
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.light-ndk_platform",
+    ],
+    srcs: [
+        "Lights.cpp",
+        "main.cpp",
+    ],
+}
