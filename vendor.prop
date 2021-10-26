@@ -149,6 +149,11 @@ vendor.gralloc.disable_ubwc=0
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
+# HVDCP
+persist.vendor.cp.taper_term_mv=7000
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
+
 # IMS
 persist.dbg.volte_avail_ovr=1
 persist.dbg.vt_avail_ovr=1
