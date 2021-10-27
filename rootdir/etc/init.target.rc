@@ -90,6 +90,10 @@ on boot
 
     chown system system /sys/class/thermal/thermal_message/sconfig
 
+    # Set xiaomi touch permissions
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
+
 on property:sys.boot_completed=1
     # Runtime fs tuning
     write /sys/block/sda/queue/read_ahead_kb 128
