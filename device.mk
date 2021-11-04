@@ -193,6 +193,17 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
+# Input
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/input/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/gpio-keys.kl \
+    $(LOCAL_PATH)/configs/input/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
+    $(LOCAL_PATH)/configs/input/keylayout/uinput-goodix.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.kl \
+    $(LOCAL_PATH)/configs/input/keylayout/sm8150-tavil-snd-card_Button_Jack.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/sm8150-tavil-snd-card_Button_Jack.kl
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/input/idc/uinput-fpc.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/uinput-fpc.idc \
+    $(LOCAL_PATH)/configs/input/idc/uinput-goodix.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-goodix.idc
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.qcom.rc \
