@@ -28,6 +28,8 @@ TARGET_BOOTLOADER_BOARD_NAME := msmnile
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_KERNEL_PAGESIZE := 4096
@@ -46,6 +48,8 @@ BOARD_KERNEL_CMDLINE := \
     service_locator.enable=1 \
     swiotlb=2048 \
     video=vfb:640x400,bpp=32,memsize=3072000
+
+BOARD_MKBOOTIMG_ARGS := --header_version 2
 
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_CONFIG := vayu_defconfig
