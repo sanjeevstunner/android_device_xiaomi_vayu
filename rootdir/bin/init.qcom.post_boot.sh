@@ -31,64 +31,6 @@ target=`getprop ro.board.platform`
 
 case "$target" in
     "msmnile")
-    # Setting b.L scheduler parameters
-    echo 95 95 > /proc/sys/kernel/sched_upmigrate
-    echo 85 85 > /proc/sys/kernel/sched_downmigrate
-    echo 100 > /proc/sys/kernel/sched_group_upmigrate
-    echo 10 > /proc/sys/kernel/sched_group_downmigrate
-    echo 0 > /proc/sys/kernel/sched_walt_rotate_big_tasks
-
-    # Setup default schedtune values for foreground/top-app
-    echo 0 > /dev/stune/schedtune.boost
-    echo 0 > /dev/stune/schedtune.prefer_idle
-    echo 1 > /dev/stune/foreground/schedtune.prefer_idle
-    echo 1 > /dev/stune/top-app/schedtune.prefer_idle
-    echo 1 > /dev/stune/top-app/schedtune.boost
-
-    # cpuset parameters
-    echo 0-7     > /dev/cpuset/top-app/cpus
-    echo 0-3,5-6 > /dev/cpuset/foreground/cpus
-    echo 0-1     > /dev/cpuset/background/cpus
-    echo 0-3     > /dev/cpuset/system-background/cpus
-    echo 0-3     > /dev/cpuset/restricted/cpus
-
-    # Turn off scheduler boost at the end
-    echo 0 > /proc/sys/kernel/sched_boost
-
-    # configure governor settings for silver cluster
-    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy0/scaling_governor
-    echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
-    echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-    echo 1785600 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/hispeed_freq
-    echo 1 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/pl
-
-    # configure governor settings for gold cluster
-    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy4/scaling_governor
-    echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
-    echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-    echo 1804800 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/hispeed_freq
-    echo 1 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/pl
-
-    # configure governor settings for gold+ cluster
-    echo "schedutil" > /sys/devices/system/cpu/cpufreq/policy7/scaling_governor
-    echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
-    echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
-    echo 2016000 > sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq
-    echo 1 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl
-
-    # configure input boost settings
-    echo "0:1324800" > /sys/module/cpu_boost/parameters/input_boost_freq
-    echo 120 > /sys/module/cpu_boost/parameters/input_boost_ms
-    echo "0:0 1:0 2:0 3:0 4:2323200 5:0 6:0 7:2323200" > /sys/module/cpu_boost/parameters/powerkey_input_boost_freq
-    echo 400 > /sys/module/cpu_boost/parameters/powerkey_input_boost_ms
-
-    # Disable wsf, beacause we are using efk.
-    # wsf Range : 1..1000 So set to bare minimum value 1.
-    echo 1 > /proc/sys/vm/watermark_scale_factor
-
-    # Enable oom_reaper
-    echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
-
     # Enable bus-dcvs
     for device in /sys/devices/platform/soc
     do
