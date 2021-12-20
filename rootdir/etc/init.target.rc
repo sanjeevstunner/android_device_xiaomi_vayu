@@ -145,10 +145,6 @@ on property:sys.boot_completed=1
     write /sys/devices/system/cpu/cpufreq/policy7/schedutil/hispeed_freq 2016000
     write /sys/devices/system/cpu/cpufreq/policy7/schedutil/pl 1
 
-    # Configure input boost settings
-    write /sys/module/cpu_boost/parameters/powerkey_input_boost_freq "0:0 1:0 2:0 3:0 4:2323200 5:0 6:0 7:2323200"
-    write /sys/module/cpu_boost/parameters/powerkey_input_boost_ms 400
-
     # Configure default schedTune value for foreground/top-app
     write /dev/stune/foreground/schedtune.prefer_idle 1
     write /dev/stune/top-app/schedtune.boost 1
