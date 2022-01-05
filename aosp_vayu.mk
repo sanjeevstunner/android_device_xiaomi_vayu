@@ -17,6 +17,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Boot Animation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Feature Flags
+TARGET_SUPPORTS_QUICK_TAP := true
+
 PRODUCT_NAME := aosp_vayu
 PRODUCT_DEVICE := vayu
 PRODUCT_BRAND := POCO
