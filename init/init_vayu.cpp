@@ -1,7 +1,7 @@
 /*
    Copyright (c) 2015, The Linux Foundation. All rights reserved.
    Copyright (C) 2016 The CyanogenMod Project.
-   Copyright (C) 2019-2020 The LineageOS Project.
+   Copyright (C) 2019-2020 Android Open Source Project.
    Copyright (C) 2021 Paranoid Android.
 
    Redistribution and use in source and binary forms, with or without
