@@ -376,7 +376,7 @@
     <ctl name="EAR SPKR PA Gain" value="G_DEFAULT" />
 
     <ctl name="RX0 Digital Volume" value="84" />
-    <ctl name="RX1 Digital Volume" value="84" />
+    <ctl name="RX1 Digital Volume" value="100" />
     <ctl name="RX2 Digital Volume" value="84" />
     <ctl name="RX3 Digital Volume" value="84" />
     <ctl name="RX4 Digital Volume" value="84" />
@@ -388,7 +388,7 @@
     <ctl name="ADC3 Volume" value="8" />
     <ctl name="ADC4 Volume" value="8" />
     <ctl name="DEC0 Volume" value="84" />
-    <ctl name="DEC1 Volume" value="84" />
+    <ctl name="DEC1 Volume" value="100" />
     <ctl name="DEC2 Volume" value="84" />
     <ctl name="DEC3 Volume" value="84" />
     <ctl name="DEC4 Volume" value="84" />
