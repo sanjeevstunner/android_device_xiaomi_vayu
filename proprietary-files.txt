@@ -1,3 +1,5 @@
+# These proprietary files are extracted from POCO X3 Pro (codenamed `vayu`) MIUI V13.0.3.0 SJUMIXM, unless pinned
+
 # ADSP
 vendor/bin/adsprpcd
 vendor/bin/cdsprpcd
@@ -73,6 +75,7 @@ vendor/lib/vndk/libxlog.so
 vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioparsers.so
 vendor/lib/libaudioroute_ext.so
+vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
 
 # Audio libraries
@@ -157,6 +160,7 @@ vendor/lib64/libcamera_scene.so
 vendor/lib64/libcapiv2svacnn.so
 vendor/lib64/libcapiv2vop.so
 vendor/lib64/libcom.qti.chinodeutils.so
+vendor/lib64/libcvface_api.so
 vendor/lib64/libdualcam_optical_zoom_control.so
 vendor/lib64/libdualcam_video_optical_zoom.so
 vendor/lib64/libft2vendor.so
@@ -326,10 +330,13 @@ vendor/etc/camera/sr_params.xml|f83901324b80bc1e1af2751e1bb4d95b01977f6e
 vendor/etc/camera/vidhance_calibration
 vendor/etc/camera/visidon_clearshot_params_algoup.xml
 
-# Camera-Megvii
-vendor/etc/camera/megviifacepp_0_5_2_model
-vendor/lib64/libmegface.so
-vendor/lib64/libMegviiFacepp-0.5.2.so
+# Camera Configs - from POCO X3 Pro MIUI V12.0.6.0 RJUMIXM
+vendor/etc/camera/sr_params.xml|f83901324b80bc1e1af2751e1bb4d95b01977f6e
+
+# Camera-Megvii - from POCO X3 Pro MIUI V12.5.7.0 RJUMIXM
+vendor/etc/camera/megviifacepp_0_5_2_model|1f0cdc706d3853114ecf7a2c0c7436238fcdf258
+vendor/lib64/libmegface.so|e32055dc224076c8a7e8486292341c4604a12787
+vendor/lib64/libMegviiFacepp-0.5.2.so|4dce8e04d919df9434d2444c7687328018a6e34f
 
 # Camera-firmware
 vendor/firmware/CAMERA_ICP.elf
@@ -496,7 +503,7 @@ vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default
 vendor/lib64/libgf_ca.so
 vendor/lib64/libgf_hal.so
 vendor/lib64/libgoodixhwfingerprint.so
-vendor/lib64/vendor.goodix.hardware.cap.biometrics.fingerprint@2.1.so
+vendor/lib64/vendor.xiaomi.hardware.fx.tunnel@1.0.so
 
 # FM
 system_ext/lib64/fm_helium.so
@@ -787,7 +794,6 @@ vendor/lib/libqmi.so
 # RIL
 -system_ext/app/QtiTelephonyService/QtiTelephonyService.apk
 system_ext/etc/permissions/qcrilhook.xml
-system_ext/etc/permissions/telephonyservice.xml
 system_ext/framework/qcrilhook.jar
 system_ext/framework/qti-telephony-common.jar
 -system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
@@ -916,13 +922,6 @@ vendor/etc/sensors/config/sns_tilt_to_wake.json
 vendor/etc/sensors/hals.conf
 vendor/etc/sensors/sns_reg_config
 
-# Soter
--app/SoterService/SoterService.apk
-vendor/bin/hw/vendor.qti.hardware.soter@1.0-service
-vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc
-vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.soter@1.0.so
-
 # Thermal
 vendor/bin/mi_thermald
 vendor/bin/thermal-engine
@@ -992,10 +991,8 @@ system_ext/lib64/libwfduibcsink.so
 system_ext/lib64/libwfduibcsrcinterface.so
 system_ext/lib64/libwfduibcsrc.so
 -system_ext/priv-app/WfdService/WfdService.apk
-vendor/bin/wfdvndservice
 vendor/bin/wifidisplayhalservice
 vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc
-vendor/etc/init/wfdvndservice.rc
 vendor/etc/seccomp_policy/wfdhdcphalservice.policy
 vendor/etc/seccomp_policy/wfdvndservice.policy
 vendor/etc/seccomp_policy/wifidisplayhalservice.policy
