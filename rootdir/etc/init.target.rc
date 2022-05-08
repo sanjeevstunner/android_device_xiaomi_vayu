@@ -59,6 +59,11 @@ on property:ro.boot.hwname=*
 on property:ro.boot.product.hardware.sku=vayu
     enable vendor.nfc_hal_service
 
+on boot
+    # FPS Info permissions
+    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0666 /sys/class/drm/sde-crtc-0/measured_fps
+
 on fs
     mount_all /vendor/etc/fstab.qcom --early
 

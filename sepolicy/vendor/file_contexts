@@ -24,6 +24,9 @@
 /vendor/bin/hw/android\.hardware\.biometrics\.fingerprint@2.1-service\.vayu u:object_r:hal_fingerprint_default_exec:s0
 /vendor/bin/hw/android\.hardware\.lights-service\.vayu               u:object_r:hal_light_default_exec:s0
 
+# FPS Info
+/sys/class/drm/sde-crtc-0/measured_fps                               u:object_r:vendor_sysfs_graphics:s0
+
 # IR
 /dev/ir_spi                                                          u:object_r:lirc_device:s0
 
