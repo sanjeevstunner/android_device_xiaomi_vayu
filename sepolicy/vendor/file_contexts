@@ -50,3 +50,6 @@
 
 # Persist subsystem
 /mnt/vendor/persist/subsys(/.*)?                                     u:object_r:persist_subsys_file:s0
+
+# USB
+/vendor/bin/init\.mi\.usb\.sh                                           u:object_r:vendor_qti_init_shell_exec:s0
