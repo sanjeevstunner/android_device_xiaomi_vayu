@@ -52,9 +52,6 @@ TARGET_USES_ION := true
 TARGET_SCREEN_DENSITY := 440
 TARGET_DISABLED_UBWC := true
 
-# Camera
-TARGET_USES_QTI_CAMERA_DEVICE := true
-
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 
