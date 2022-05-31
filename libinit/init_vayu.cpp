@@ -125,6 +125,9 @@ void vendor_load_properties() {
 //  Enable transitional log for Privileged permissions
     property_override("ro.control_privapp_permissions", "log");
 
+    // Set product name to show when connect through usb
+    property_override("vendor.usb.product_string", GetProperty("ro.product.marketname", "").c_str());
+
 #ifdef __ANDROID_RECOVERY__
     std::string buildtype = GetProperty("ro.build.type", "userdebug");
     if (buildtype != "user") {
