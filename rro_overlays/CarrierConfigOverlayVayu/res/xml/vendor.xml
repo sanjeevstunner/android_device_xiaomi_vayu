@@ -95,6 +95,9 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.-->
         <!-- Enable SS over UT by default-->
         <boolean name="carrier_supports_ss_over_ut_bool" value="true" />
 
+        <!-- Show 4G icon instead of LTE icon -->
+        <boolean name="show_4g_for_lte_data_icon_bool" value="true"/>
+
         <!-- Config to allow hold in video calls -->
         <boolean name="allow_hold_video_call_bool" value="true"/>
         <!-- Config to allow accept one way for video calls -->
