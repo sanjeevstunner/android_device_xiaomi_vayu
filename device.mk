@@ -382,6 +382,8 @@ PRODUCT_PACKAGES += \
     libjson \
     libril \
     librilutils \
+    libprotobuf-cpp-full \
+    libxml2 \
     librmnetctl
 
 # Sensors
