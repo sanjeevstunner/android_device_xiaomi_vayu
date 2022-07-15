@@ -7,3 +7,6 @@ vendor.goodix.hardware.interfaces.biometrics.fingerprint::IGoodixFingerprintDaem
 vendor.goodix.hardware.biometrics.fingerprint::IGoodixFingerprintDaemon                  u:object_r:hal_fingerprint_hwservice:s0
 vendor.xiaomi.hardware.fingerprintextension::IXiaomiFingerprint                          u:object_r:hal_fingerprint_hwservice:s0
 vendor.xiaomi.hardware.campostproc::IMiPostProcService                                   u:object_r:hal_camerapostproc_xiaomi_hwservice:s0
+
+# Sensors
+vendor.xiaomi.hardware.citsensorservice::ICitSensorService                               u:object_r:vendor_hal_citsensorservice_xiaomi_hwservice:s0
