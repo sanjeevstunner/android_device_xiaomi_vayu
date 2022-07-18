@@ -49,16 +49,16 @@ vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.alarm@1.0.so
 
-# Audio ACDB - finetuned by ujjwalkirorimal
-vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|5941f2549942637188a45e5a2da2a1f0ec28c7eb
-vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb|682965f6d1460a26020b3cddd6665d06e251eac6
-vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|d9684f6ae4f4306cf21d14483da8666962d01f97
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|e97723273c12bfaccd9d074f4471f1f374a3c333
-vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|6e778bb1a73e111ef6538ddc018a268664d3cc04
-vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|a6f348ebfa81e6d5d9974077fe46660169afca75
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|bb77306a09c38e182881be8dfd879fd8a6d11758
-vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|50127ac245fd8a675c3cf16ed9ef832bc85511df
-vendor/etc/acdbdata/adsp_avs_config.acdb|2c1b21e56e756fc97da42f6d816de3abef6a5abe
+# Audio ACDB
+vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Codec_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_General_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb
+vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb
+vendor/etc/acdbdata/adsp_avs_config.acdb
 
 # Audio Firmware
 vendor/firmware/tas256x_reg.bin
