@@ -1,2 +1,5 @@
 # Dolby
 vendor_internal_prop(vendor_dolby_loglevel_prop);
+
+# Health
+system_vendor_config_prop(vendor_health_prop)

@@ -12,6 +12,9 @@ ro.boot.fpsensor                   u:object_r:vendor_fp_prop:s0
 ro.hardware.fp                     u:object_r:vendor_fp_prop:s0
 vendor.fps_hal.                    u:object_r:vendor_fp_prop:s0
 
+# Health
+sys.health.healthloop.disable       u:object_r:vendor_health_prop:s0
+
 # Power HAL
 vendor.powerhal.                   u:object_r:vendor_power_prop:s0
 
