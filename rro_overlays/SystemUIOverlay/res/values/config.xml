@@ -16,8 +16,6 @@
 */
 -->
 <resources>
-    <dimen name="rounded_corner_content_padding">8dp</dimen>
-
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">120</integer>
     
