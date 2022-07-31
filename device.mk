@@ -339,15 +339,11 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_vayu/com.nxp.mifare.xml
 
 # Overlay
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-   NotchBarKillerVayu \
-   BluetoothResOverlay \
-   FrameworksResOverlay \
-   SettingsOverlay \
-   SettingsProviderOverlay \
-   SystemUIOverlay \
-   TelephonyOverlay
+   NotchBarKillerVayu
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
