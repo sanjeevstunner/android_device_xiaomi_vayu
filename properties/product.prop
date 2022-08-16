@@ -5,6 +5,11 @@ audio.sys.routing.latency=0
 audio.offload.min.duration.secs=30
 audio.sys.offload.pstimeout.secs=3
 
+# Blurs
+persist.sys.sf.disable_blurs=1
+ro.sf.blurs_are_expensive=1
+ro.surface_flinger.supports_background_blur=1
+
 # Charger
 ro.charger.enable_suspend=true
 
