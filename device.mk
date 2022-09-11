@@ -135,10 +135,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.consumerir.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.consumerir.xml
 
-# DeviceSettings
-PRODUCT_PACKAGES += \
-    XiaomiParts
-
 # Dex
 ifneq ($(TARGET_BUILD_VARIANT),eng)
 PRODUCT_DEX_PREOPT_DEFAULT_COMPILER_FILTER := verify
