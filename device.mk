@@ -119,6 +119,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
    libstdc++.vendor
 
+# Inherit g cam mod when available 
+$(call inherit-product-if-exists, vendor/google/camera/config.mk)
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
