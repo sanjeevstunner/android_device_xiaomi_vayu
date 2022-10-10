@@ -107,7 +107,7 @@ renderthread.skia.reduceopstasksplitting=true
 
 # WFD
 debug.sf.enable_hwc_vds=1
-debug.sf.latch_unsignaled=1
+debug.sf.auto_latch_unsignaled=1
 media.wfd.max_resolution=8
 persist.debug.wfd.enable=1
 persist.sys.wfd.virtual=0
