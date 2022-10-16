@@ -438,7 +438,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # NeuralNetworks
 PRODUCT_PACKAGES += \
-    android.hardware.neuralnetworks@1.3.vendor
+    android.hardware.neuralnetworks@1.3.vendor \
+    android.hardware.neuralnetworks@1.3-service-qti-hta \
+    android.hardware.neuralnetworks@1.3-service-qti
 
 # Net
 PRODUCT_PACKAGES += \
