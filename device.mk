@@ -128,7 +128,7 @@ PRODUCT_PACKAGES += \
    libstdc++.vendor
 
 # Inherit g cam mod when available 
-$(call inherit-product-if-exists, vendor/google/camera/config.mk)
+$(call inherit-product-if-exists, vendor/Gcam/config.mk)
 
 # Charger
 PRODUCT_PACKAGES += \
