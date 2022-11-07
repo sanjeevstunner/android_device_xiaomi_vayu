@@ -21,7 +21,7 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libpiex_shim",
+    name: "libpiex_shim-vayu",
 
     shared_libs: [
         "libpiex",

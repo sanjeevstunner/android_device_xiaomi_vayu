@@ -115,7 +115,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     libshim_megvii \
-    libpiex_shim \
+    libpiex_shim-vayu \
     libwatermark_shim
 
 PRODUCT_COPY_FILES += \
