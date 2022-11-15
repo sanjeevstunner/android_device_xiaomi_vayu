@@ -406,6 +406,12 @@ PRODUCT_COPY_FILES += \
 # Properties
 include $(LOCAL_PATH)/properties/default.mk
 
+# RCS
+PRODUCT_PACKAGES += \
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
+
 # RIL
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
