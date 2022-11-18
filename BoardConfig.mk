@@ -75,8 +75,7 @@ BOARD_KERNEL_CMDLINE := \
     msm_rtb.filter=0x237 \
     loop.max_part=7 \
     androidboot.usbcontroller=a600000.dwc3 \
-    androidboot.init_fatal_reboot_target=recovery \
-    kpti=off
+    androidboot.init_fatal_reboot_target=recovery
 
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_BOOTIMG_HEADER_VERSION := 2
