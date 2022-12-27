@@ -14,9 +14,10 @@ $(call inherit-product, device/xiaomi/vayu/device.mk)
 # Inherit common configurations from Pixel Experience 
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
-# Inherit from telephony config
+# Inherit configurations for Pixel Additionals (from TheParasiteProject)
+$(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
+TARGET_FLATTEN_APEX := true
 TARGET_INCLUDE_CARRIER_SETTINGS := true
-$(call inherit-product-if-exists, vendor/pixel-additional/configs/telephony.mk)
 
 # Feature Flags
 TARGET_SUPPORTS_QUICK_TAP := true
