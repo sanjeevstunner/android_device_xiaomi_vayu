@@ -19,6 +19,9 @@ $(call inherit-product-if-exists, vendor/pixel-additional/config.mk)
 TARGET_FLATTEN_APEX := true
 TARGET_INCLUDE_CARRIER_SETTINGS := true
 
+# Inherit configurations for Mi Parts
+$(call inherit-product-if-exists, packages/apps/Parts/config.mk)
+
 # Feature Flags
 TARGET_SUPPORTS_QUICK_TAP := true
 
