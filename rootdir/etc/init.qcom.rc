@@ -167,6 +167,9 @@ on boot
 
     setprop wifi.interface wlan0
 
+    # GPU boost
+    chmod 0660 /sys/class/kgsl/kgsl-3d0/min_pwrlevel
+
     #Remove SUID bit for iproute2 ip tool
     chmod 0755 /system/bin/ip
 
