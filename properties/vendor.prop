@@ -131,6 +131,11 @@ vendor.display.enable_null_display=0
 vendor.display.enable_optimize_refresh=1
 vendor.gralloc.disable_ubwc=0
 
+# HVDCP
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.taper_term_mv=6500
+persist.vendor.cp.vbus_offset_mv=1040
+
 # Listen
 ro.vendor.audio.soundtrigger=sva
 ro.vendor.audio.soundtrigger.cnn.adsp.level=27
