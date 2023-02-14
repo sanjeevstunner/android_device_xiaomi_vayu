@@ -383,6 +383,7 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+   BoostFrameworkOverlayVayu \
    CarrierConfigOverlayVayu \
    DialerOverlayVayu \
    FrameworksResOverlayVayu \
