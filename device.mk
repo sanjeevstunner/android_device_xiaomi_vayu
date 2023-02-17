@@ -365,6 +365,7 @@ PRODUCT_PACKAGES += \
    FrameworksResOverlayVayu \
    NotchBarKillerVayu \
    PixelConfigOverlayVayu \
+   SimpleDeviceConfigOverlayVayu \
    SettingsOverlayVayu \
    SettingsProviderOverlayVayu \
    SystemUIOverlayVayu \
