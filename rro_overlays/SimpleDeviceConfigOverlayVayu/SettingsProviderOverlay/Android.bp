@@ -15,7 +15,7 @@
 //
 
 runtime_resource_overlay {
-    name: "SimpleDeviceConfigOverlay",
+    name: "SimpleDeviceConfigOverlayVayu",
     resource_dirs: ["res"],
     vendor: true,
 }
