@@ -23,6 +23,9 @@ debug.cpurend.vsync=false
 # DPM
 persist.vendor.dpm.feature=1
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
