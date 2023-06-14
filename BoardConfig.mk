@@ -55,6 +55,9 @@ TARGET_FS_CONFIG_GEN := $(DEVICE_PATH)/configs/config.fs
 # DRM
 TARGET_ENABLE_MEDIADRM_64 := true
 
+# Firmware
+-include vendor/xiaomi/vayu-firmware/BoardConfigVendor.mk
+
 # GPS
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := default
 LOC_HIDL_VERSION := 4.0
