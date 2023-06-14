@@ -116,6 +116,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
    libstdc++.vendor
 
+$(call inherit-product-if-exists, vendor/mgc/config.mk)
+
 # Charger
 PRODUCT_PACKAGES += \
     libsuspend
