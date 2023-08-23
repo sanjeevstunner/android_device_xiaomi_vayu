@@ -364,7 +364,6 @@ PRODUCT_PACKAGES += \
    DialerOverlayVayu \
    FrameworksResOverlayVayu \
    NotchBarKillerVayu \
-   PixelConfigOverlayVayu \
    SimpleDeviceConfigOverlayVayu \
    SettingsOverlayVayu \
    SettingsProviderOverlayVayu \

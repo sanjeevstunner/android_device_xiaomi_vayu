@@ -1,5 +1,0 @@
-runtime_resource_overlay {
-    name: "PixelConfigOverlayVayu",
-    certificate: "platform",
-    product_specific: true
-}
