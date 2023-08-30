@@ -87,11 +87,6 @@ sys.fflag.override.settings_seamless_transfer=true
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
-# SkiaGL Threaded
-debug.renderengine.backend=skiaglthreaded
-debug.hwui.renderer=skiagl
-renderthread.skia.reduceopstasksplitting=true 
-
 # WFD
 debug.sf.enable_hwc_vds=1
 debug.sf.auto_latch_unsignaled=1
