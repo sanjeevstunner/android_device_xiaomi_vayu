@@ -53,9 +53,6 @@ persist.vendor.ims.disableQXDMLogs=1
 vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=0
 
-# LMK
-ro.config.low_ram=false
-
 # Media
 media.settings.xml=/vendor/etc/media_profiles_vendor.xml
 media.stagefright.thumbnail.prefer_hw_codecs=true
